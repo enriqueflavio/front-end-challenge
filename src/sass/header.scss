@@ -1,3 +1,60 @@
-.wrap-hearder {
+body { background-color: #707070;}
 
+.wrap-header {
+    background-color: #b71d3e;
+    font-family: $font-family-base;
+    > .header {
+        > .logo-grandMotors {
+            margin: $margin-base 0 0 $margin-wee;
+        }
+        > .logo-toyota {
+            float: right;
+            margin: $margin-middle $margin-wee 0 0;
+        }
+        > .wrap-nav {
+            padding-bottom: $padding-wee;
+            > .nav {
+                text-align: left;
+                margin: $margin-wee 0 0 $margin-wee;
+                > .nav-item {
+                    margin-bottom: $margin-small;
+                    font-size: $font-size-small;
+                    color: #fefefe;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    @media (min-width: $breakpoint-lg) {
+        > .header {
+            position: fixed;
+            width: 940px;
+            left: 50%;
+            transform: translateX(-50%);
+            > .logo-grandMotors {
+                float: left;
+                margin-right: 50px;
+            }
+            > .wrap-nav {
+                float: left;
+                margin-top: $margin-base;
+                > .nav {
+                    text-align: left;
+                    margin-top: 6px;
+                    > .nav-item {
+                        margin-right: $margin-extra;
+                        font-size: $font-size-small;
+                        color: #fefefe;
+                        display: inline-block;
+                        text-transform: uppercase;
+                    }
+                    > .-telefones {
+                        background-color: #b71d3e;
+                        margin-left: $margin-extra;
+                        padding: $padding-tiny $padding-small;
+                    }
+                }
+            }
+        }
+    }
 }
