@@ -143,4 +143,39 @@
             }
         }
     }
+    > .infos {
+        color: #fff;
+        margin-left: $margin-wee;
+        font-family: $font-family-base;
+        > .title {
+            text-transform: uppercase; 
+            font-size: $font-size-h1;
+            margin-bottom: $margin-small;
+        }
+        > .infos-details {
+            display: block;
+            margin-bottom: $margin-small;
+            > span {
+                display: block;
+                width: 100%;
+            }
+            > .-font-small {
+                font-size: $font-size-h6;
+            }
+            > .-font-base {
+                font-size: $font-size-h3;
+            }
+            .-font-large {
+                font-size: $font-size-h2;
+            }
+            > .-upercase {
+                text-transform: uppercase;
+            }
+        }
+        > .consulte {
+            font-size: $font-size-wee;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
