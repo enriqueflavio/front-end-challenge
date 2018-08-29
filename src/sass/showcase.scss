@@ -1,23 +1,24 @@
 .showcase {
-    background: url(../img/showcase-image.jpg) no-repeat -900px 0;
+    background:#8b898e url(../img/showcase-image.jpg) no-repeat -900px 0;
     overflow: auto;
+    text-align: center;
     > .wrap-simular-financiamento {
         width: 300px;
         background-color:rgba($color: #181717, $alpha: 0.6);
         float: left;
         margin-left: $margin-wee;
-        margin-top: $margin-base;
-        margin-bottom: $margin-extra;
-        padding: 20px 16px 30px;
+        margin-top: $margin-wee;
+        margin-bottom: $margin-wee;
+        padding: $padding-small $padding-small $padding-base;
         font-family: $font-family-base;
         > .simular-financiamento {
             text-align: center;
-            color: #fff;
+            color: $color-white;
             padding-bottom: $margin-base;
             margin-bottom: $margin-base;
             border-bottom: 1px solid #797979;
             > .title {
-                font-size: 18px;
+                font-size: $font-size-large;
                 text-transform: uppercase;
             }
             > .subtitle {
@@ -35,7 +36,7 @@
                 > .form-label {
                     width: 100%;
                     font-size: $font-size-small;
-                    color: #fff;
+                    color: $color-white;
                     margin-bottom: $margin-wee;
                     float: left;
                 }
@@ -107,7 +108,7 @@
                     margin-top: 7px;
                     margin-right: $margin-base;
                     font-size: $font-size-small;
-                    color: #fff;
+                    color: $color-white;
                 }
                 > .form-checkbox {
                     width: 12px;
@@ -117,7 +118,7 @@
                 }
                 > .form-checkbox-label {
                     font-size: $font-size-wee;
-                    color: #fff;
+                    color: $color-white;
                     float: left;
                     margin-left: $margin-tiny;
                 }
@@ -128,7 +129,7 @@
             }
             > .form-buttom {
                 background-color: #b71d3e;
-                color: #fff;
+                color: $color-white;
                 text-transform: uppercase;
                 text-align: cente;
                 width: 100%;
@@ -138,23 +139,24 @@
             }
             > .politica {
                 font-size: $font-size-wee;
-                color: #fff;
+                color: $color-white;
                 text-decoration: underline;
             }
         }
     }
     > .infos {
-        color: #fff;
+        color: $color-white;
         margin-left: $margin-wee;
+        margin-bottom: $margin-small;
         font-family: $font-family-base;
         > .title {
             text-transform: uppercase; 
-            font-size: $font-size-h1;
+            font-size: $font-size-h2;
             margin-bottom: $margin-small;
         }
         > .infos-details {
             display: block;
-            margin-bottom: $margin-small;
+            margin-bottom: $margin-tiny;
             > span {
                 display: block;
                 width: 100%;
@@ -174,8 +176,18 @@
         }
         > .consulte {
             font-size: $font-size-wee;
-            color: #fff;
+            color: $color-white;
             text-decoration: none;
         }
+    }
+    > .infos-facebook {
+        width: 200px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    > .aviso {
+        font-size: $font-size-wee;
+        color: $color-white;
+        margin-bottom: $margin-tiny;
     }
 }
