@@ -1,193 +1,236 @@
-.showcase {
+.wrap-showcase {
     background:#8b898e url(../img/showcase-image.jpg) no-repeat -900px 0;
     overflow: auto;
-    text-align: center;
-    > .wrap-simular-financiamento {
-        width: 300px;
-        background-color:rgba($color: #181717, $alpha: 0.6);
-        float: left;
-        margin-left: $margin-wee;
-        margin-top: $margin-wee;
-        margin-bottom: $margin-wee;
-        padding: $padding-small $padding-small $padding-base;
-        font-family: $font-family-base;
-        > .simular-financiamento {
-            text-align: center;
-            color: $color-white;
-            padding-bottom: $margin-base;
-            margin-bottom: $margin-base;
-            border-bottom: 1px solid #797979;
-            > .title {
-                font-size: $font-size-large;
-                text-transform: uppercase;
-            }
-            > .subtitle {
-                font-size: $font-size-small;
-                margin-top: $margin-tiny;
-            }
-        }
-        > .form {
-            width: 100%;
-            > .form-item {
-                width: 100%;
-                display: inline-block;
-                float: left;
+    > .showcase {
+        > .wrap-simular-financiamento {
+            width: 93%;
+            background-color:rgba($color: #181717, $alpha: 0.6);
+            float: left;
+            margin-left: $margin-wee;
+            margin-top: $margin-wee;
+            margin-bottom: $margin-wee;
+            padding: $padding-small $padding-small $padding-base;
+            font-family: $font-family-base;
+            > .simular-financiamento {
+                text-align: center;
+                color: $color-white;
+                padding-bottom: $margin-base;
                 margin-bottom: $margin-base;
-                > .form-label {
-                    width: 100%;
+                border-bottom: 1px solid #797979;
+                > .title {
+                    font-size: $font-size-large;
+                    text-transform: uppercase;
+                }
+                > .subtitle {
                     font-size: $font-size-small;
-                    color: $color-white;
-                    margin-bottom: $margin-wee;
-                    float: left;
+                    margin-top: $margin-tiny;
                 }
-                > input, select {
+            }
+            > .form {
+                width: 100%;
+                > .form-item {
                     width: 100%;
-                    border: 1px solid #c6c6c6;
-                    color: rgba(255, 255, 255, .6);
-                    padding-left: $padding-wee;
-                    border-radius: 3px;
-                    height: 30px;
-                    background: transparent;
-                }
-                > input::placeholder {
-                    color: rgba(255, 255, 255, .6);
-                }
-                > .form-select {
-                    width: 100%;
-                    > option {
-                        background-color:rgba($color: #181717, $alpha: 0.3);
-                    }
-                }
-                > .form-radio {
-                    width: 12px;
-                    height: 12px;
-                    -webkit-appearance: none;
-                    background: #fafafa;
-                    float: left;
-                    border: 1px solid #cacece;
-                    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-                    padding: 9px;
-                    border-radius: 50px;
                     display: inline-block;
-                    position: relative;
-                    // outline: none;
-                    :checked {
-                        border-radius: 50px;
-                        position: absolute;
-                        top: 3px;
-                        background: #e9ecee;
-                        color: #99a1a7;
-                        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
-                        text-shadow: 0px;
-                        left: 30px;
-                        font-size: 32px;
-                        border: 1px solid blue;
-                        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+                    float: left;
+                    margin-bottom: $margin-base;
+                    > .form-label {
+                        width: 100%;
+                        font-size: $font-size-small;
+                        color: $color-white;
+                        margin-bottom: $margin-wee;
+                        float: left;
                     }
-                    // :checked:after{
-                    //     border: 1px solid red;
-                    //     content: ' ';
-                    //     width: 12px;
-                    //     height: 12px;
-                    //     border-radius: 50px;
-                    //     position: absolute;
-                    //     top: 3px;
-                    //     background: #99a1a7;
-                    //     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
-                    //     text-shadow: 0px;
-                    //     left: 3px;
-                    //     font-size: 32px;
-                    // }
-                    // :active, :checked:active {
-                    //     border: 1px solid green;
-                    //     box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-                    // }
+                    > input, select {
+                        width: 100%;
+                        border: 1px solid #c6c6c6;
+                        color: rgba(255, 255, 255, .6);
+                        padding-left: $padding-wee;
+                        border-radius: 3px;
+                        height: 30px;
+                        background: transparent;
+                    }
+                    > input::placeholder {
+                        color: rgba(255, 255, 255, .6);
+                    }
+                    > .form-select {
+                        width: 100%;
+                        > option {
+                            background-color:rgba($color: #181717, $alpha: 0.3);
+                        }
+                    }
+                    > .form-radio {
+                        width: 12px;
+                        height: 12px;
+                        -webkit-appearance: none;
+                        background: #fafafa;
+                        float: left;
+                        border: 1px solid #cacece;
+                        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+                        padding: 9px;
+                        border-radius: 50px;
+                        display: inline-block;
+                        position: relative;
+                        // outline: none;
+                        :checked {
+                            border-radius: 50px;
+                            position: absolute;
+                            top: 3px;
+                            background: #e9ecee;
+                            color: #99a1a7;
+                            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+                            text-shadow: 0px;
+                            left: 30px;
+                            font-size: 32px;
+                            border: 1px solid blue;
+                            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+                        }
+                        // :checked:after{
+                        //     border: 1px solid red;
+                        //     content: ' ';
+                        //     width: 12px;
+                        //     height: 12px;
+                        //     border-radius: 50px;
+                        //     position: absolute;
+                        //     top: 3px;
+                        //     background: #99a1a7;
+                        //     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+                        //     text-shadow: 0px;
+                        //     left: 3px;
+                        //     font-size: 32px;
+                        // }
+                        // :active, :checked:active {
+                        //     border: 1px solid green;
+                        //     box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+                        // }
+                    }
+                    > .form-radio-label {
+                        float: left;
+                        margin-top: 7px;
+                        margin-right: $margin-base;
+                        font-size: $font-size-small;
+                        color: $color-white;
+                    }
+                    > .form-checkbox {
+                        width: 12px;
+                        height: 12px;
+                        float: left;
+                        margin: 0;
+                    }
+                    > .form-checkbox-label {
+                        font-size: $font-size-wee;
+                        color: $color-white;
+                        float: left;
+                        margin-left: $margin-tiny;
+                    }
                 }
-                > .form-radio-label {
-                    float: left;
-                    margin-top: 7px;
-                    margin-right: $margin-base;
-                    font-size: $font-size-small;
+                .-border-bottom {
+                    padding-bottom: $padding-base;
+                    border-bottom: 1px solid #797979;
+                }
+                > .form-buttom {
+                    background-color: #b71d3e;
                     color: $color-white;
+                    text-transform: uppercase;
+                    text-align: cente;
+                    width: 100%;
+                    border: none;
+                    padding: $padding-wee;
+                    margin-bottom: $margin-base;
                 }
-                > .form-checkbox {
-                    width: 12px;
-                    height: 12px;
-                    float: left;
-                    margin: 0;
-                }
-                > .form-checkbox-label {
+                > .politica {
                     font-size: $font-size-wee;
                     color: $color-white;
-                    float: left;
-                    margin-left: $margin-tiny;
+                    text-decoration: underline;
                 }
             }
-            .-border-bottom {
-                padding-bottom: $padding-base;
-                border-bottom: 1px solid #797979;
+        }
+        > .infos {
+            color: $color-white;
+            margin-left: $margin-wee;
+            margin-bottom: $margin-small;
+            font-family: $font-family-base;
+            > .title {
+                text-transform: uppercase; 
+                font-size: $font-size-h2;
+                margin-bottom: $margin-small;
             }
-            > .form-buttom {
-                background-color: #b71d3e;
-                color: $color-white;
-                text-transform: uppercase;
-                text-align: cente;
-                width: 100%;
-                border: none;
-                padding: $padding-wee;
-                margin-bottom: $margin-base;
+            > .infos-details {
+                display: block;
+                margin-bottom: $margin-tiny;
+                > span {
+                    display: block;
+                    width: 100%;
+                }
+                > .-font-small {
+                    font-size: $font-size-h6;
+                }
+                > .-font-base {
+                    font-size: $font-size-h3;
+                }
+                .-font-large {
+                    font-size: $font-size-h2;
+                }
+                > .-upercase {
+                    text-transform: uppercase;
+                }
             }
-            > .politica {
+            > .consulte {
                 font-size: $font-size-wee;
                 color: $color-white;
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
-    }
-    > .infos {
-        color: $color-white;
-        margin-left: $margin-wee;
-        margin-bottom: $margin-small;
-        font-family: $font-family-base;
-        > .title {
-            text-transform: uppercase; 
-            font-size: $font-size-h2;
-            margin-bottom: $margin-small;
+        > .infos-facebook {
+            width: 200px;
+            margin: 0 auto;
+            display: inline-block;
         }
-        > .infos-details {
-            display: block;
-            margin-bottom: $margin-tiny;
-            > span {
-                display: block;
-                width: 100%;
-            }
-            > .-font-small {
-                font-size: $font-size-h6;
-            }
-            > .-font-base {
-                font-size: $font-size-h3;
-            }
-            .-font-large {
-                font-size: $font-size-h2;
-            }
-            > .-upercase {
-                text-transform: uppercase;
-            }
-        }
-        > .consulte {
+        > .aviso {
             font-size: $font-size-wee;
             color: $color-white;
-            text-decoration: none;
+            margin-bottom: $margin-tiny;
         }
     }
-    > .infos-facebook {
-        width: 200px;
-        margin: 0 auto;
-        display: inline-block;
+    @media (min-width: $breakpoint-sm) {
+        background:#8b898e url(../img/showcase-image.jpg) no-repeat -450px 0;
+        > .showcase {
+            position: relative;
+            overflow: auto;
+            text-shadow: 1px 1px 3px #2e2e2e;
+        > .wrap-simular-financiamento {
+            width: 300px;
+            text-align: left;
+            margin-right: $margin-small;
+        }
+        > .infos {
+            margin-top: $margin-wee;
+            > .title {
+                margin-top: $margin-middle;
+            }
+            > .infos-details {
+                margin-bottom: $margin-middle;
+            }
+        }
+        > .infos-facebook {
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+        }
+        > .aviso {
+            padding-right: $padding-base;
+            margin-top: $margin-big;
+        }
+        }
     }
-    > .aviso {
-        font-size: $font-size-wee;
-        color: $color-white;
-        margin-bottom: $margin-tiny;
+    @media (min-width: $breakpoint-lg) {
+        background:#8b898e url(../img/showcase-image.jpg) no-repeat -100px 0;
+        padding-top: $padding-chiclete;
+        > .showcase {
+            width: 940px;
+            margin: 0 auto;
+        }
+    }
+    @media (min-width: $breakpoint-lg) {
+        background:#8b898e url(../img/showcase-image.jpg) no-repeat 0 0;
     }
 }

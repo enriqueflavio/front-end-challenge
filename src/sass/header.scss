@@ -30,6 +30,7 @@ body { background-color: #707070;}
         position: fixed;
         width: 100%;
         height: 60px;
+        z-index: 5;
         > .header {
             position: fixed;
             width: 940px;
