@@ -182,13 +182,14 @@
         }
         > .infos-facebook {
             width: 200px;
-            margin: 0 auto;
+            margin-left: $margin-wee;
             display: inline-block;
         }
         > .aviso {
             font-size: $font-size-wee;
             color: $color-white;
             margin-bottom: $margin-tiny;
+            margin-left: $margin-wee;
         }
     }
     @media (min-width: $breakpoint-sm) {
@@ -218,7 +219,7 @@
         }
         > .aviso {
             padding-right: $padding-base;
-            margin-top: $margin-big;
+            margin-top: 283px;
         }
         }
     }
@@ -229,8 +230,11 @@
             width: 940px;
             margin: 0 auto;
         }
+        > .aviso {
+            margin-top: 295px;
+        }
     }
-    @media (min-width: $breakpoint-lg) {
+    @media (min-width: $breakpoint-xl) {
         background:#8b898e url(../img/showcase-image.jpg) no-repeat 0 0;
     }
 }
