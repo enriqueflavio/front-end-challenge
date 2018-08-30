@@ -161,18 +161,6 @@
                     display: block;
                     width: 100%;
                 }
-                > .-font-small {
-                    font-size: $font-size-h6;
-                }
-                > .-font-base {
-                    font-size: $font-size-h3;
-                }
-                .-font-large {
-                    font-size: $font-size-h2;
-                }
-                > .-upercase {
-                    text-transform: uppercase;
-                }
             }
             > .consulte {
                 font-size: $font-size-wee;
@@ -215,7 +203,7 @@
         > .infos-facebook {
             position: absolute;
             left: 60%;
-            bottom: 10%;
+            bottom: 15%;
         }
         > .aviso {
             padding-right: $padding-base;

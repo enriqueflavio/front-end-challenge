@@ -1,0 +1,56 @@
+.wrap-chamadas {
+    background: #A2223E url(../img/bg-chamadas.jpg);
+    padding: $padding-wee;
+    > .chamadas {
+        color: $color-white;
+        text-align: center;
+        > .chamadas-description {
+            padding-bottom: $padding-base;
+            margin-bottom: $margin-base;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(121, 121, 121, .8);
+            }
+            > .chamadas-realce {
+                color: #d33c5c;
+                margin-bottom: 0px;
+                display: block;
+                width: 100%;
+                margin-top: $margin-tiny;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-md) {
+        > .chamadas {
+            width: 770px;
+            margin: $margin-extra auto 0;
+            column-count: 3;
+            column-rule: 1px solid rgba(121, 121, 121, .1);
+            > .chamadas-description {
+                display: block;
+                &:not(:last-child) {
+                    border-bottom: none;
+                }
+                &:not(:last-child):after {
+                    content: '';
+                    display: block;
+                    height: 20px;
+                }
+                > .chamadas-realce {
+                    margin: $margin-base auto;
+                }
+            }
+        }
+    }
+    @media (min-width: $breakpoint-lg) {
+        > .chamadas {
+            width: 940px;
+            padding: $padding-wee;
+            text-align: center;
+            > .chamadas-description {
+                display: block;
+                width: 245px;
+                margin-left: $margin-middle;                
+            }
+        }
+    }
+}

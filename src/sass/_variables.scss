@@ -13,7 +13,7 @@ $color-gray-base:           #242424;
 $color-gray-darker:         #2a2a2a;
 $color-gray-dark:           #797979;
 $color-gray:                #c6c6c6;
-$color-gray-light:          #eaeaea;
+$color-gray-light:          #797979;
 $color-gray-lighter:        #f4f4f4;
 $color-bluish-gray:        	#273341;
 $color-white:        		#fff;
@@ -197,3 +197,26 @@ $breakpoint-xl: 1200px;
 .right {right: 0;}
 .left {left: 0;}
 .bottom {bottom: 0;}
+
+.-border-bottom {
+	border-bottom: $border;
+}
+
+.-font-small {
+	font-size: $font-size-small;
+}
+.-font-base {
+	font-size: $font-size-base;
+}
+.-font-h1 {
+	font-size: $font-size-h1;
+}
+.-font-h2 {
+	font-size: $font-size-h2;
+}
+.-font-h3 {
+	font-size: $font-size-h3;
+}
+.-upercase {
+	text-transform: uppercase;
+}
