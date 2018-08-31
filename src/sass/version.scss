@@ -1,0 +1,179 @@
+.wrap-version {
+    background: #2a2a2a url(../img/highway.png) no-repeat center 0;
+    color: $color-white;
+    overflow: auto;
+    > .version {
+        padding-top: $padding-base;
+        > .wrap-version-version {
+            float: left;
+            margin-left: $margin-base;
+            > .title {
+                text-align: right;
+                font-size: $font-size-middle;
+                margin-bottom: $margin-small;
+            }
+            > .version-version {
+                color: $color-white;
+                > .version-version-item {
+                    text-align: right;
+                    border-bottom: 1px solid #797979;
+                    margin-bottom: $margin-wee;
+                    padding-bottom: $padding-wee;
+                    &:not(:first-child) {
+                        opacity: .2;
+                    }
+                }
+            }
+        }
+        > .version-image {
+            transform: scale(0.8);
+            position: relative;
+            right: 50px;
+        }
+        > .wrap-infos-gerais {
+            background-color: rgba(42, 42, 42, .75);
+            padding: 0 $padding-wee;
+            margin: -35px 0 $margin-small;
+            > .title {
+                font-size: $font-size-middle;
+                margin-bottom: $margin-small;
+            }
+            > .infos-gerais-table {
+                color: $color-white;
+                width: 100%;
+                tr {
+                    > .table-description, > .table-infos {
+                        padding: 0;
+                        height: 50px;
+                        vertical-align: middle;
+                    }
+                    > .table-description {
+                        width: 150px;
+                        padding-left: $padding-wee;
+                        color: #797979;
+                    }
+                    > .table-infos {
+                        padding-left: $padding-large;
+                        color: #D33C5C;
+                    }
+                    &.-rachurado {
+                        background: rgba(255, 255, 255, .2);
+                    }
+                }
+            }
+        }
+        > .wrap-itens-serie {
+            padding-left: $padding-wee;
+            margin-bottom: $margin-base;
+            overflow: hidden;
+            > .title {
+                font-size: $font-size-middle;
+                margin-bottom: $margin-small;
+            }
+            > .itens-serie {
+                margin: 0;
+                > .itens {
+                    float: left;
+                    display: inline;
+                    background-color: #b71d3e;
+                    margin: 0 $margin-tiny $margin-tiny 0;
+                    padding: $padding-tiny $padding-small;
+                    border-radius: 35px;
+                }
+            }
+        }
+    }
+    @media (min-width: 500px) {
+        > .version {
+            > .version-image {
+                position: relative;
+                margin: -5em 0 $margin-wee 15em;
+                display: inline-block;
+                transform: scale(1);
+            }
+        }
+    }
+    @media (min-width: 699px) {
+        > .version {
+            > .version-image {
+                margin: 5em 0 $margin-wee 10em;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-md) {
+        > .version {
+            position: relative;
+            > .wrap-version-version {
+                width: 200px;
+            }
+            > .version-image {
+                position: relative;
+                margin: $margin-big 0 $margin-big 100px;
+                transform: scale(1.2);
+            }
+            > .wrap-infos-gerais {
+                > .infos-gerais-table {
+                    tr {
+                        > .table-description {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+            > .wrap-itens-serie {
+                overflow: hidden;
+                > .itens-serie {
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+    @media (min-width: $breakpoint-lg) { 
+        > .version {
+            width: 940px;
+            margin: 0 auto;
+            position: relative;
+            > .wrap-version-version {
+                width: 200px;
+                padding-top: $padding-base;
+            }
+            > .version-image {
+                position: relative;
+                margin: 100px 0 $margin-big $margin-extra;
+                transform: scale(1);
+            }
+            > .wrap-infos-gerais {
+                width: 340px;
+                position: absolute;
+                top: 35px;
+                right: 0px;
+                padding:$padding-large $padding-small;
+                > .infos-gerais-table {
+                    tr {
+                        > .table-description, > .table-infos {
+                            height: 35px;
+                            font-size: $font-size-small;
+                        }
+                        > .table-description {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+            > .wrap-itens-serie {
+                margin: 0 0 $margin-base 230px;
+                overflow: hidden;
+                font-size: $font-size-small;
+                > .itens-serie {
+                    margin: 0;
+                    > .itens {
+                        margin: 0 $margin-wee $margin-wee 0;
+                        padding: $padding-tiny $padding-small;
+                    }
+                }
+            }
+
+        }
+    }
+}
