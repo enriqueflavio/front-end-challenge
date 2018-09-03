@@ -1,0 +1,56 @@
+.wrap-conheca-carros {
+    background-color: #fff;
+    padding: $padding-base 0;
+    overflow: hidden;
+    > .title {
+        font-size: $font-size-h2;
+        color: #2a2a2a;
+        text-align: center;
+        display: block;
+        &::after {
+            content: '';
+            display: block;
+            margin: $margin-small auto 0;
+            width: 100px;
+            border-bottom: 1px solid rgba(55, 52, 53, .3);
+        }
+    }
+    > .wrap-carrousel {
+        > .carrousel {
+            padding: $padding-wee;
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            > .item-carrousel {
+                display: inline-block;
+                width: 140px;
+                transform: scale(.9);
+                text-align: center;
+                margin: 0  $margin-tiny $margin-extra 0;
+            }
+        }
+    }
+    @media (min-width: 478px) {
+        > .wrap-carrousel {
+            > .carrousel {
+                transform: scale(1);
+                text-align: justify;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-lg) {
+        > .wrap-carrousel {
+            text-align: center;
+            > .carrousel {
+                width: 800px;
+                height: 150px;
+                overflow: hidden;
+                margin-top: $margin-large;
+                > .item-carrousel {
+                    display: inline-block;
+                    margin: 0  $margin-tiny $margin-extra 0;
+                }
+            }
+        }
+    }
+}
