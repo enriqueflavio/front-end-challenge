@@ -1,12 +1,13 @@
 body { background-color: #707070;}
 
+.logo-grandMotors {
+    margin: $margin-base 0 0 $margin-wee;
+}
+
 .wrap-header {
     background-color: #b71d3e;
     font-family: $font-family-base;
     > .header {
-        > .logo-grandMotors {
-            margin: $margin-base 0 0 $margin-wee;
-        }
         > .logo-toyota {
             float: right;
             margin: $margin-middle $margin-wee 0 0;
@@ -36,7 +37,7 @@ body { background-color: #707070;}
             width: 940px;
             left: 50%;
             transform: translateX(-50%);
-            > .logo-grandMotors {
+            .logo-grandMotors {
                 float: left;
                 margin-right: 50px;
             }

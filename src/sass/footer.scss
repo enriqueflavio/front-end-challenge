@@ -1,0 +1,81 @@
+.wrap-footer {
+    background-color: #2a2a2a;
+    overflow: hidden;
+    position: relative;
+    > .footer {
+        position: relative;
+        > .copyrigth {
+            font-size: $font-size-small;
+            color: #797979;
+            padding-left: $padding-wee;
+        }
+        > .links {
+            margin: $margin-base $margin-tiny;
+            > .links-item {
+                display: inline-block;
+                > a {
+                    font-size: $font-size-small;
+                    color: #797979;
+                    margin: 0 $margin-tiny;
+                }
+            }
+        }
+        > .sociais {
+            margin-left: $margin-wee; 
+            margin-bottom: $margin-base; 
+            > i {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background-color: rgba(234, 234, 234, .25);
+                &:hover {
+                    background-color: transparent;
+                    color: $color-white;
+                }
+            }
+            .-sociais-facebook:hover {
+                background-color: $color-facebook;
+            }
+            .-sociais-google:hover {
+                background-color: #245DC1;
+            }
+        }
+        > .logo-auto-force {
+            display: block;
+            width: 68px;
+            margin: $margin-base auto;
+        }
+    }
+    @media (min-width: $breakpoint-sm) {
+        > .footer {
+            > .copyrigth {
+                text-align: center;
+                margin-top: -$margin-middle;
+                padding-left: 0;
+            }
+            > .links {
+                text-align: center;
+                margin-bottom: $margin-extra;
+            }
+            > .sociais {
+                position: absolute;
+                top: 17px;
+                right: 10px;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-lg) {
+        > .footer {
+            width: 940px;
+            margin: 0 auto;
+            > .links {
+                margin-top: $margin-tiny;
+            }
+            > .sociais {
+                right: 10px;
+            }
+        }
+    }
+}
