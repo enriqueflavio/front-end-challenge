@@ -1,0 +1,26 @@
+body { background-color: #707070;}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #202020;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    width: 7px;;
+    height: 7px;
+    background-color: #b71d3e;
+    -webkit-border-radius: 3px;
+    margin-right: $margin-base;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #b71d3e;
+    -webkit-border-radius: 3px;
+}

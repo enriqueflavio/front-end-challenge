@@ -150,13 +150,16 @@
                 right: 0px;
                 padding:$padding-large $padding-small;
                 > .infos-gerais-table {
+                    display: block;
+                    max-height: 270px;
+                    overflow-y: scroll;
                     tr {
                         > .table-description, > .table-infos {
                             height: 35px;
                             font-size: $font-size-small;
                         }
                         > .table-description {
-                            width: 150px;
+                            width: 50%;
                         }
                     }
                 }
@@ -167,6 +170,10 @@
                 font-size: $font-size-small;
                 > .itens-serie {
                     margin: 0;
+                    display: inline-block;
+                    max-height: 100px;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
                     > .itens {
                         margin: 0 $margin-wee $margin-wee 0;
                         padding: $padding-tiny $padding-small;
