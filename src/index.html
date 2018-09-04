@@ -221,27 +221,47 @@
         
         <h1 class="title">Conheça nossos carros</h1>
 
-        <img src="" alt="" class="arrow-back">
+        <section class="wrap-carrousel cycle-slideshow"
+        data-cycle-prev="#prev"
+        data-cycle-next="#next"
+        data-cycle-pager=".cycle-pager"
+        data-cycle-slides="> div">
 
-        <section class="wrap-carrousel">
-            <ul class="carrousel">
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-                <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
-                <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
-                <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-                <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
-                <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
-                <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-                <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
-                <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
-            </ul>
+            <a href=# id="prev"><i class="fas fa-angle-left"></i></a>
+
+            <div>
+                <ul class="carrousel">
+                    <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
+                    <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
+                    <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
+                    <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
+                    <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="carrousel">
+                    <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
+                    <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
+                    <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
+                    <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
+                    <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="carrousel">
+                    <li class="item-carrousel"><img src="img/cla.png" alt="Classe CLA" class="img-carrousel">Classe CLA</li>
+                    <li class="item-carrousel"><img src="img/aclass.png" alt="Classe A" class="img-carrousel">Classe A</li>
+                    <li class="item-carrousel"><img src="img/cclass.png" alt="Classe C" class="img-carrousel">Classe C</li>
+                </ul>
+            </div>
+
+            <a href=# id="next"><i class="fas fa-angle-right"></i></a>
+
         </section>
-        
-        <img src="" alt="" class="arrow-forward">
+    
+        <div class="cycle-pager"></div>
 
     </article>
 
@@ -272,6 +292,9 @@
         </section>
 
     </article>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="./js/cycle.js"></script>
     
 </body>
 </html>

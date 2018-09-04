@@ -2,6 +2,7 @@
     background-color: #fff;
     padding: $padding-base 0;
     overflow: hidden;
+    position: relative;
     > .title {
         font-size: $font-size-h2;
         color: #2a2a2a;
@@ -16,39 +17,86 @@
         }
     }
     > .wrap-carrousel {
-        > .carrousel {
-            padding: $padding-wee;
-            text-align: center;
-            overflow: hidden;
-            display: inline-block;
-            > .item-carrousel {
-                display: inline-block;
-                width: 140px;
-                transform: scale(.9);
+        > div {
+            margin: $margin-extra 0;
+            > .carrousel {
+                padding: $padding-middle;
                 text-align: center;
-                margin: 0  $margin-tiny $margin-extra 0;
+                overflow: hidden;
+                display: inline-block;
+                > .item-carrousel {
+                    display: inline-block;
+                    width: 140px;
+                    transform: scale(.9);
+                    text-align: center;
+                    margin: 0  $margin-base $margin-extra 0;
+                }
             }
         }
     }
+    /* pager */
+    .cycle-pager { 
+        text-align: center;
+        width: 100%;
+        z-index: 500;
+        position: absolute;
+        bottom: 15px;
+        overflow: hidden;
+    }
+    .cycle-pager span { 
+        font-size: 50px;
+        width: 16px;
+        height: 16px; 
+        display: inline-block;
+        color: #ddd;
+        cursor: pointer; 
+    }
+    .cycle-pager span.cycle-pager-active { color: #b71d3e;}
+    .cycle-pager > * { cursor: pointer;}
+
+    #prev, #next {
+        position: absolute;
+        top: 30%;
+        z-index: 999;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgba(0, 0, 0, .35);
+        color: $color-white;
+        text-align: center;
+    }
+    #prev {
+        left: 0px;
+    }
+    #next {
+        right: 0px;
+    }
     @media (min-width: 478px) {
         > .wrap-carrousel {
-            > .carrousel {
-                transform: scale(1);
-                text-align: justify;
+            > div {
+                padding-left: $padding-small;
+                > .carrousel {
+                    transform: scale(1);
+                }
             }
         }
     }
     @media (min-width: $breakpoint-lg) {
+        text-align: center;
+        padding-bottom: $padding-big;
         > .wrap-carrousel {
-            text-align: center;
-            > .carrousel {
-                width: 800px;
-                height: 150px;
-                overflow: hidden;
-                margin-top: $margin-large;
-                > .item-carrousel {
-                    display: inline-block;
-                    margin: 0  $margin-tiny $margin-extra 0;
+            position: relative;
+            width: 900px;
+            margin: 0 auto;
+            > div {
+                margin: $margin-tiny auto $margin-big;
+                padding-left: $padding-large;
+                > .carrousel {
+                    margin-top: $margin-large;
+                    > .item-carrousel {
+                        margin-right: $margin-small;
+                    }
                 }
             }
         }
