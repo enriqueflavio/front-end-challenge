@@ -22,6 +22,27 @@ body { background-color: #707070;}
                     font-size: $font-size-small;
                     color: #fefefe;
                     text-transform: uppercase;
+                    > .nav-dropdown-menu {
+                        background-color: $color-white;
+                        color: #2a2a2a;
+                        margin-left: -$margin-wee;
+                        overflow: auto;
+                        > .nav-dropdown-menu-item {
+                            float: left;
+                            display: inline-block;
+                            width: 100%;
+                            padding:$padding-base 0 $padding-tiny $padding-wee;
+                            > .nav-dropdown-menu-img {
+                                float: right;
+                                padding-right: $padding-base;
+                                margin-top: -$margin-wee;
+                            }
+                            &:hover {
+                                background-color: #b71d3e;
+                                color: $color-white;
+                            }
+                        }
+                    }
                 }
             }
         }
