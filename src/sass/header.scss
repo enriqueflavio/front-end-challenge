@@ -17,30 +17,49 @@ body { background-color: #707070;}
             > .nav {
                 text-align: left;
                 margin: $margin-wee 0 0 $margin-wee;
+                cursor: pointer;
                 > .nav-item {
                     margin-bottom: $margin-small;
                     font-size: $font-size-small;
                     color: #fefefe;
                     text-transform: uppercase;
+                    > a {
+                        color: $color-white;
+                        text-decoration: none;
+                    }
                     > .nav-dropdown-menu {
+                        width: 100%;
                         background-color: $color-white;
                         color: #2a2a2a;
                         margin-left: -$margin-wee;
-                        overflow: auto;
+                        display: none;
                         > .nav-dropdown-menu-item {
                             float: left;
-                            display: inline-block;
                             width: 100%;
-                            padding:$padding-base 0 $padding-tiny $padding-wee;
+                            line-height: 30px;
+                            padding:$padding-wee 0 $padding-tiny $padding-wee;
                             > .nav-dropdown-menu-img {
                                 float: right;
                                 padding-right: $padding-base;
-                                margin-top: -$margin-wee;
                             }
                             &:hover {
                                 background-color: #b71d3e;
                                 color: $color-white;
                             }
+                        }
+                        > .-telefones-dropown-item-bg {
+                            background-color: #b71d3e;
+                            color: $color-white;
+                            border-bottom: 1px solid rgba(255, 255, 255, .35);
+                        }
+                    }
+                    > .-dropdown-open {
+                        display: inline-block;
+                    }
+                    > .-telefones-dropdown-position {
+                        & > li:hover {
+                            background: none;
+                            color: #b71d3e;
                         }
                     }
                 }
@@ -74,11 +93,43 @@ body { background-color: #707070;}
                         color: #fefefe;
                         display: inline-block;
                         text-transform: uppercase;
+                        position: relative;
+                        > .nav-dropdown-menu {
+                            position: absolute;
+                            top: 25px;
+                            left: 10px;
+                        }
+                        > .-nossos-veiculos-dropdown-position {
+                            width: 250px;
+                        }
+                        > .-vendas-diretas-dropdown-position {
+                            width: 150px;
+                        }
+                        > .-telefones-dropdown-position {
+                            left: -145px;
+                            width: 260px;
+                        }
+
                     }
                     > .-telefones {
                         background-color: #b71d3e;
                         margin-left: $margin-extra;
                         padding: $padding-tiny $padding-small;
+                    }
+                }
+            }
+        }
+    }
+}
+.-fixed-color {
+    background: #b71d3e;
+    > .header {
+        > .wrap-nav {
+            > .nav {
+                .-telefones {
+                    background-color: $color-white;
+                    > .dropdown-menu, i {
+                        color: #b71d3e;
                     }
                 }
             }
