@@ -1,6 +1,8 @@
 # Usando
 
-[node-sass](https://www.npmjs.com/package/node-sass)
+- [node-sass](https://www.npmjs.com/package/node-sass) para sass.
+
+- [cycle2](http://jquery.malsup.com/cycle2/) pluginn jquery para carrousel da sessão "Conheça nossos carros".
 
 #Metodologias
 
