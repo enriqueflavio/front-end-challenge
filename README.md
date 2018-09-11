@@ -1,4 +1,10 @@
-# Usando
+#Hospedado
+
+- Hospedei em uma plataforma chamada [surge](surge.sh), facil hospedagem pra apresentação de conteudos simples.
+
+- Pode ser visualizado aqui: http://toyota-challenger.surge.sh/
+
+#Usando
 
 - [node-sass](https://www.npmjs.com/package/node-sass) para sass.
 
@@ -15,4 +21,12 @@
 #O que falta fazer
 
 - Adicionar os js para funcionar carrousel e umas funções pequenas para usabilidade.
+
+#O que Falta?
+
+- O video no showcase, eu realmente nao consegui fazer, ainda, usei o vide, como sugerido e uns 2 outros, mas todos quando eu baixava na minha maquina o proprio exemplo deles nao funcionavam.
+
+#Considerações
+
+Como faz muito tempo já do pedido, decidi mostrar assim, e resolver o que falta depois. Obg pela oportunidade.
 

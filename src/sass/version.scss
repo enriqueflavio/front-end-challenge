@@ -165,15 +165,13 @@
                 }
             }
             > .wrap-itens-serie {
-                margin: 0 0 $margin-base 230px;
-                overflow: hidden;
+                margin: 0 0 $margin-tiny 230px;
                 font-size: $font-size-small;
                 > .itens-serie {
-                    margin: 0;
+                    margin: -5px 0 0 0;
                     display: inline-block;
-                    max-height: 100px;
-                    overflow-x: scroll;
-                    overflow-y: hidden;
+                    overflow: auto;
+                    max-height: 50px;
                     > .itens {
                         margin: 0 $margin-wee $margin-wee 0;
                         padding: $padding-tiny $padding-small;
